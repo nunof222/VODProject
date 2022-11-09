@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+html
+{ 
+ height: 100%;   
+ color: white;
+
+
+      
+}
+
+/* .toolbar
+{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+     
+} */
+
+.menuitem {
+    margin-left: 15px;
+    margin-right: 15px;
+}

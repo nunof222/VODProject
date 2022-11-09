@@ -32,7 +32,7 @@
     height: 60px;
     display: flex;
     align-items: center;
-    background-color: #1976d2;
+    background-color: #2f19d2;
     color: white;
     font-weight: 600;
   }
@@ -126,10 +126,10 @@
   a,
   a:visited,
   a:hover {
-    color: #1976d2;
+    color: #ffffff;
     text-decoration: none;
   }
 
   a:hover {
-    color: #125699;
+    color: #73797e;
   }
