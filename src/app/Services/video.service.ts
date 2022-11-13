@@ -48,7 +48,7 @@ export class VideoService {
   //  below method is available to any role~
 
 
-  getCategories(video:Video): Observable<Video[]>{
+  getCategories(): Observable<Video[]>{
     return this.http.get<Video[]>(this.catUrl);
 
   }
