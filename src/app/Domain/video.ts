@@ -1,13 +1,13 @@
-export interface Movie { 
+export interface Video { 
     id: string;
     title: string;
     synopsis: string;
     director: string;
-    cast: [ "Elijah Wood", "Ian McKellen", "Orlando Bloom" ];
+    cast: string [];
     category: string;
     poster: string;
     streamURL: string;
-    rate: [1,2,3,4,5];
+    rate: number [];
 
 
 }
