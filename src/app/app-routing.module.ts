@@ -5,14 +5,14 @@ import { PageNotFoundComponent } from './Components/page-not-found/page-not-foun
 
 const routes: Routes = [
   {path: 'home', component: AppComponent},
-  { path: '', pathMatch: 'full', redirectTo: 'AppComponent' },
-  {
-    path: 'path', 
-    component: Component,
-    children: [
-      { path: 'childpath', component: ChildComponent }  //usar childPaths no admin module
-    ]
-  },
+  { path: '', pathMatch: 'full', redirectTo: '/home' },
+  // {
+  //   path: 'path', 
+  //   component: Component,
+  //   children: [
+  //     { path: 'childpath', component: ChildComponent }  //usar childPaths no admin module
+  //             ]
+  // },
   { path: '**', component: PageNotFoundComponent },
 ];
 
