@@ -6,20 +6,26 @@ import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './Components/page-not-found/page-not-found.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ToolbarComponent } from './Components/toolbar/toolbar.component';
-
+import { YouTubePlayerModule } from '@angular/youtube-player';
+import { HomeComponent } from './Components/home/home.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
     ToolbarComponent,
+    HomeComponent,
    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AdminModule,
-    HttpClientModule
+    HttpClientModule,
+    YouTubePlayerModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
