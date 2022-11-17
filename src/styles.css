@@ -13,15 +13,60 @@ html
       
 }
 
-/* .toolbar
-{
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-     
-} */
-
 .menuitem {
     margin-left: 15px;
     margin-right: 15px;
 }
+
+a,
+a:visited,
+a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #73797e;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+p {
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  margin: 82px auto 32px;
+  padding: 0 16px;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #2f19d2;
+  color: white;
+  font-weight: 600;
+}
+
+
