@@ -9,6 +9,7 @@ import { ToolbarComponent } from './Components/toolbar/toolbar.component';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { HomeComponent } from './Components/home/home.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { VideoDetailsComponent } from './Components/videodetails/videodetails.component';
 
 @NgModule({
   declarations: [
@@ -16,12 +17,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     PageNotFoundComponent,
     ToolbarComponent,
     HomeComponent,
+    VideoDetailsComponent,
    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AdminModule,
     HttpClientModule,
     YouTubePlayerModule,
     FormsModule,
