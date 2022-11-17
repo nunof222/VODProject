@@ -6,13 +6,7 @@ import { PageNotFoundComponent } from './Components/page-not-found/page-not-foun
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
    { path: '', pathMatch: 'full', redirectTo: '/home' },
-  // {
-  //   path: 'path', 
-  //   component: Component,
-  //   children: [
-  //     { path: 'childpath', component: ChildComponent }  //usar childPaths no admin module
-  //             ]
-  // },
+  { path: 'admin', loadChildren: () => import('./Modules/admin/admin.module').then(m => m.AdminModule) },  //lazy load admin module
   { path: '**', component: PageNotFoundComponent },
 ];
 
