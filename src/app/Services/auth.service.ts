@@ -18,7 +18,7 @@ export class AuthService {
    }
 
    login(email:string, password:string) {
-    return this.http.post<User>('/api/user/signin', {email, password})
+    return this.http.post<User>('https://vodmasterdata.herokuapp.com/api/user/signin/', {email, password})
       .pipe(map(user => {
         localStorage.setItem('user', JSON.stringify(user));
         return user;
