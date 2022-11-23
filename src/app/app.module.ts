@@ -11,6 +11,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { VideoDetailsComponent } from './Components/videodetails/videodetails.component';
 import { SignupComponent } from './Components/signup/signup.component';
 import { SigninComponent } from './Components/signin/signin.component';
+import { httpInterceptorProvider } from './Interceptors/httpInterceptorProvider'; 
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { SigninComponent } from './Components/signin/signin.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [httpInterceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
